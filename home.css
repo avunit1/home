@@ -1,0 +1,51 @@
+/* General styles */
+body {
+    margin: 0;
+    background-color: #000000;
+    color: #39ff14;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 3vw; /* Match padding from contact.css */
+}
+
+/* Logo styling */
+.logo {
+    color: #39ff14;
+    font-size: 2.5rem; /* Match font size from contact.css */
+}
+
+/* Navigation links */
+nav a {
+    color: #fe019a;
+    text-decoration: none;
+    margin: 0 1.5vw; /* Match margin from contact.css */
+    font-size: 1.5rem; /* Match font size from contact.css */
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 1vh 0;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+}

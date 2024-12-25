@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    margin: 0;
+    background-color: #000000;
+    color: #39ff14;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 3vw; /* Reduced padding */
+}
+
+/* Logo styling */
+.logo {
+    color: #39ff14;
+    font-size: 2.5rem; /* Reduced font size */
+}
+
+/* Navigation links */
+nav a {
+    color: #fe019a;
+    text-decoration: none;
+    margin: 0 1.5vw; /* Reduced margin */
+    font-size: 1.5rem; /* Reduced font size */
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 3vh 5vw; /* Reduced padding */
+    text-align: center;
+}
+
+main h1 {
+    color: #fe019a;
+    font-size: 2.5rem; /* Reduced font size */
+    margin-bottom: 1.5vh;
+}
+
+/* Image styles with aspect ratio maintained */
+main img {
+    max-height: 40vh; /* Reduced max height */
+    max-width: 40vw; /* Reduced max width */
+    height: auto;
+    width: auto;
+    border: 5px solid #fe019a;
+    margin-bottom: 2vh;
+}
+
+/* Input box styling */
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.input-box input {
+    width: 45%; /* Reduced width */
+    padding: 0.8rem; /* Reduced padding */
+    font-size: 1.3rem; /* Reduced font size */
+    font-family: "Courier New", Courier, monospace;
+    border: 2px solid #fe019a;
+    color: #39ff14;
+    background-color: #000000;
+    outline: none;
+}
+
+.input-box button {
+    padding: 0.8rem 1.8rem; /* Reduced padding */
+    font-size: 1.3rem; /* Reduced font size */
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #ffffff; /* Button text color */
+    background-color: #fe019a;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.8rem; /* Reduced margin */
+}
+
+.input-box button:hover {
+    background-color: #ff33bb;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main img {
+        max-height: 30vh; /* Reduced max height for smaller screens */
+        max-width: 70vw; /* Reduced max width for smaller screens */
+    }
+
+    .input-box input {
+        width: 65%; /* Adjusted width for input box */
+    }
+
+    .input-box button {
+        font-size: 1.1rem; /* Reduced font size for button */
+    }
+}
